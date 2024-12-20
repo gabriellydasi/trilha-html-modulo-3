@@ -3,14 +3,36 @@ body, html {
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-ul { list-style: none; padding-left: 5px; }
-a { color:blue; text-decoration: none;}
+
 .bar {
     background-color: #f9f9fb;
-    padding:15px;
+    padding: 15px;
     border-top: solid 1px #cdcdcd;
     border-bottom: solid 1px #cdcdcd;
 }
+
+a, sup {
+    color: #0c53c4;
+    text-decoration: none;
+}
+
+a:hover {
+    border-bottom: 1px solid #0c53c4;
+}
+
+.default {
+    color: rgb(191, 4, 4);
+}
+
+.default:hover {
+    border-bottom: 1px solid rgb(191, 4, 4);
+}
+
+ul { 
+    list-style: none; 
+    padding-left: 5px; 
+}
+
 .content {
     max-width: 1440px;
     margin: auto;
@@ -22,17 +44,73 @@ a { color:blue; text-decoration: none;}
     padding-left: 1rem;
     padding-right: 1rem;
 }
+
+h1, summary {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-size: 25px;
+    margin-bottom: 0;
+}
+
+summary {
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+h2 {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 180%;
+    font-size: 14px;
+    font-weight: 100;
+    color: #1e1e1e;
+}
+
+.text-and-image {
+    display: flex;
+    justify-items: flex-start;
+    
+}
+
+.text-and-image img {
+    height: 50%;
+}
+
+.imagem-flutuante {
+    float: right; /* Faz a imagem flutuar à esquerda */
+      margin: 10px; /* Adiciona espaço ao redor da imagem */
+      max-width: 300px;
+}
+
+.italic-font {
+    color: #6d6d6d;
+}
+
+.history-content {
+    display: flex;
+    flex-direction: column;
+}
+
+
 .footer {
     min-height: 100px;
     border-top: solid 1px #cdcdcd;
 }
+
 .anchors {
     border-left: solid 1px #cdcdcd;
     padding-left: 15px;
 }
+
 .sidebar {
     border-right: solid 1px #cdcdcd;
 }
+
 figure {
     text-align: center;
 }
